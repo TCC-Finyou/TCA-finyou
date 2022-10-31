@@ -22,6 +22,7 @@ ul {
 
 img {
     max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -52,7 +53,7 @@ p.light-text {
     }
 
     main section:first-child picture:nth-child(2) img {
-        width: 70vw;
+        max-width: 70vw;
     }
 
     main section:first-child h1 {
