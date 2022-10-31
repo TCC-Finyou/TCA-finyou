@@ -43,14 +43,15 @@ p.light-text {
         text-align: center;
     }
 
-    main section:first-child img:first-child {
+    main section:first-child picture:first-child img {
         position: absolute;
         top: 0;
+        left: 0;
         height: 100%;
         z-index: -1;
     }
 
-    main section:first-child img:nth-child(2) {
+    main section:first-child picture:nth-child(2) img {
         width: 70vw;
     }
 
