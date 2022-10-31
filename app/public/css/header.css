@@ -36,9 +36,9 @@
         position: absolute;
         top: 0;
         right: 0;
-        padding: 130px 10px 190px 50px;
+        padding: 100px 10px 190px 50px;
         border-bottom-left-radius: 100%;
-        background-color: #228690;
+        background-color: #05464C;
         color: white;
         transform: translateX(100%);
         transition: transform 500ms ease;
