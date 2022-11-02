@@ -14,6 +14,7 @@
 
     header > a:first-child {
         line-height: 0;
+        z-index: -1;
     }
 
     #logo {

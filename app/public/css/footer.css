@@ -8,7 +8,7 @@
     footer span:first-child {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-size: 2rem;
     }
 
@@ -34,7 +34,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 30px;
         font-size: .9rem;
         font-weight: 700;
     }
