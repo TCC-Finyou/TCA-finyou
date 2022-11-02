@@ -22,14 +22,46 @@
         flex-direction: column;
         row-gap: 5px;
         width: 38px;
+        height: 30px;
         cursor: pointer;
+        overflow: hidden;
     }
 
     #menu > span {
+        position: absolute;
         width: 100%;
         height: 6px;
         border-radius: 2px;
         background-color: white;
+        transition: transform 250ms ease-in, top 250ms ease-in;
+    }
+
+    #menu > span:first-child {
+        top: 0;
+    }
+
+    #menu > span:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #menu > span:last-child {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+
+    #menu > span:first-child.close {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    #menu > span:nth-child(2).close {
+        transform: translateX(100%);
+    }
+
+    #menu > span:last-child.close {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
     }
 
     #menu-items {
