@@ -16,9 +16,6 @@
 
     <!-- links externos -->
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='preload' as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></noscript>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
@@ -33,14 +30,18 @@
 
     <script src="../../public/js/script.js" defer></script>
 
+    <!-- primeira imagem a carregar -->
+
+    <link rel="preload" href="../../public/images/home/WEBP/imagem-topo.webp">
+
     <title>Finyou - finanças de um jeito simples para você</title>
 </head>
 <body>
     <header>
         <a href="#">
             <picture>
-                <source srcset="../../public/images/WEBP/topo-pagina/logo.webp">
-                <img id="logo" src="../../public/images/PNG/topo-pagina/logo.png" width="697" height="191" alt="logo finyou" title="logo">
+                <source srcset="../../public/images/header/WEBP/logo.webp">
+                <img id="logo" src="../../public/images/header/PNG/logo.png" width="697" height="191" alt="logo finyou" title="logo">
             </picture>
         </a>
 
@@ -61,13 +62,13 @@
     <main>
         <section>
             <picture>
-                <source srcset="../../public/images/WEBP/topo-pagina/grafico-gradiente-topo.webp">
-                <img src="../../public/images/PNG/topo-pagina/grafico-gradiente-topo.png" width="1080" height="1080" alt="fundo azul com gráficos subindo" title="fundo gráfico"> 
+                <source srcset="../../public/images/header/WEBP/grafico-gradiente-topo.webp">
+                <img src="../../public/images/header/PNG/grafico-gradiente-topo.png" width="1080" height="1080" alt="fundo azul com gráficos subindo" title="fundo gráfico"> 
             </picture>
 
             <picture>
-                <source srcset="../../public/images/WEBP/home/imagem-topo.webp" >
-                <img src="../../public/images/PNG/home/imagem-topo.png" width="1080" height="1080" alt="pai e filho observando suas finanças" title="ilustração pai e filho">
+                <source srcset="../../public/images/home/WEBP/imagem-topo.webp">
+                <img src="../../public/images/home/PNG/imagem-topo.png" width="1080" height="1080" alt="pai e filho observando suas finanças" title="ilustração pai e filho">
             </picture>
 
             <h1>Finanças para você</h1>
@@ -79,7 +80,7 @@
 
         <section>
             <div>
-                <i class='bx bxs-cloud'></i>
+                <img src="../../public/images/icons/cloud-solid.png" alt="Uma nuvem" title="Nuvem minimalista">
 
                 <h2>Desempenho</h2>
 
@@ -87,7 +88,7 @@
             </div>
 
             <div>
-                <i class='bx bx-money'></i>
+                <img src="../../public/images/icons/money-regular.png" alt="Uma nota de dinheiro" title="dinheiro">
 
                 <h2>Investimento</h2>
 
@@ -95,7 +96,7 @@
             </div>
 
             <div>
-                <i class='bx bx-body'></i>
+                <img src="../../public/images/icons/body-regular.png" alt="Uma pessoa" title="Pessoa">
 
                 <h2>Acessibilidade</h2>
 
@@ -105,7 +106,7 @@
 
         <section>
             <div>
-                <i class='bx bx-bar-chart'></i>
+                <img src="../../public/images/icons/bar-chart-regular.png" alt="Gráfico subindo" title="Gráfico">
 
                 <h2>O que é o Finyou?</h2>
 
@@ -115,7 +116,7 @@
             </div>
 
             <div>
-                <i class='bx bxs-shopping-bag'></i>
+                <img src="../../public/images/icons/shopping-bag-solid.png" alt="Uma sacola de compras" title="Sacola de compras">
 
                 <h2>Conheça os preços do Finyou+</h2>
 
@@ -130,8 +131,8 @@
 
             <div>
                 <picture>
-                    <source srcset="../../public/images/WEBP/home/0.webp" >
-                    <img src="../../public/images/PNG/home/0.png" width="1080" height="1080" alt="uma menina contando seu dinheiro" title="ilustração menina">
+                    <source srcset="../../public/images/home/WEBP/0.webp">
+                    <img src="../../public/images/home/PNG/0.png" width="1080" height="1080" alt="uma menina contando seu dinheiro" title="ilustração menina">
                 </picture>
 
                 <p class="light-text">O Finyou te garante que você acompanhe os seus passos financeiros e como isso está te influenciando.  Te oferecendo os seguintes tópicos:</p>
@@ -140,8 +141,8 @@
             <div>
                 <div>
                     <picture>
-                        <source srcset="../../public/images/WEBP/home/1.webp">
-                        <img src="../../public/images/PNG/home/1.png" width="1080" height="1080" alt="duas mulheres árabes administrando suas finanças" title="ilustração mulheres árabes">
+                        <source srcset="../../public/images/home/WEBP/1.webp">
+                        <img src="../../public/images/home/PNG/1.png" width="1080" height="1080" alt="duas mulheres árabes administrando suas finanças" title="ilustração mulheres árabes">
                     </picture>
 
                     <h3>Conta Conjunta</h3>
@@ -151,8 +152,8 @@
 
                 <div>
                     <picture>
-                        <source srcset="../../public/images/WEBP/home/2.webp">
-                        <img src="../../public/images/PNG/home/2.png" width="1080" height="1080" alt="um casal se mantendo informado sobre finanças" title="ilustração casal">
+                        <source srcset="../../public/images/home/WEBP/2.webp">
+                        <img src="../../public/images/home/PNG/2.png" width="1080" height="1080" alt="um casal se mantendo informado sobre finanças" title="ilustração casal">
                     </picture>
 
                     <h3>Auxílio de extrato</h3>
@@ -162,8 +163,8 @@
 
                 <div>
                     <picture>
-                        <source srcset="../../public/images/WEBP/home/3.webp">
-                        <img src="../../public/images/PNG/home/3.png" width="1080" height="1080" alt="duas mulheres observando um gráfico" title="ilustração duas mulheres e um gráfico">
+                        <source srcset="../../public/images/home/WEBP/3.webp">
+                        <img src="../../public/images/home/PNG/3.png" width="1080" height="1080" alt="duas mulheres observando um gráfico" title="ilustração duas mulheres e um gráfico">
                     </picture>
 
                     <h3>Gráfico</h3>
@@ -173,8 +174,8 @@
 
                 <div>
                     <picture>
-                        <source srcset="../../public/images/WEBP/home/4.webp">
-                        <img src="../../public/images/PNG/home/4.png" width="1080" height="1080" alt="uma menina feliz com o seu porquinho cheio de moedas" title="uma menina e um porquinho">
+                        <source srcset="../../public/images/home/WEBP/4.webp">
+                        <img src="../../public/images/home/PNG/4.png" width="1080" height="1080" alt="uma menina feliz com o seu porquinho cheio de moedas" title="uma menina e um porquinho">
                     </picture>
 
                     <h3>Porcentagem</h3>
@@ -188,19 +189,19 @@
     <footer>
         <span>
             <a href="#" aria-label="link para página do instagram">
-                <i class='bx bxl-instagram'></i>
+                <img src="../../public/images/icons/social-media/instagram-logo.png" alt="Logo do instagram" title="Instagram">
             </a>
 
             <a href="#" aria-label="link para página do facebook">
-                <i class='bx bxl-facebook'></i>
+                <img src="../../public/images/icons/social-media/facebook-logo.png" alt="Logo do facebook" title="Facebook">
             </a>
 
             <a href="#" aria-label="link para página do twitter">
-                <i class='bx bxl-twitter'></i>
+                <img src="../../public/images/icons/social-media/twitter-logo.png" alt="Logo do twitter" title="Twitter">
             </a>
 
             <a href="#" aria-label="link para página do youtube">
-                <i class='bx bxl-youtube'></i>
+                <img src="../../public/images/icons/social-media/youtube-logo.png" alt="Logo do youtube" title="Youtube">
             </a>
         </span>
 
@@ -229,7 +230,7 @@
         </div>
 
         <span>
-            <i class='bx bx-world'></i>
+            <img src="../../public/images/icons/world-regular.png" alt="Planeta Terra" title="Planeta Terra">
             Português (Brasil)
         </span>
     </footer>

@@ -108,12 +108,11 @@ p.light-text {
         text-align: center;
     }
 
-    main section:nth-child(2) div i {
+    main section:nth-child(2) div img {
+        width: 90px;
         padding: 20px;
         border-radius: 50%;
         background: var(--main-gradient);
-        color: white;
-        font-size: 5rem;
     }
 
     main section:nth-child(2) div h2 {
@@ -142,8 +141,8 @@ p.light-text {
         margin-bottom: 50px;
     }
 
-    main section:nth-child(3) div i {
-        font-size: 3rem;
+    main section:nth-child(3) div img{
+        width: 40px;
     }
 
     main section:nth-child(3) div h2 {

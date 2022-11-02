@@ -39,8 +39,7 @@
         font-weight: 700;
     }
 
-    footer > span:last-child i {
+    footer > span:last-child img {
         margin-right: 5px;
-        font-size: 1.6rem;
     }
 }
