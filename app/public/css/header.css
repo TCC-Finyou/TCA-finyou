@@ -57,6 +57,6 @@
     }
 
     #menu-items li a:hover {
-        color: #333;
+        text-shadow: 0 0 5px white;
     }
 }
