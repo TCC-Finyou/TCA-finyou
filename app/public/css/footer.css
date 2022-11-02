@@ -13,7 +13,7 @@
     }
 
     footer a:hover {
-        color: #333;
+        text-shadow: 0 0 5px white;
     }
 
     footer > div {
@@ -37,6 +37,10 @@
         margin-top: 50px;
         font-size: .9rem;
         font-weight: 700;
+    }
+
+    footer > span:first-child a {
+        line-height: 0;
     }
 
     footer > span:last-child img {
