@@ -27,9 +27,11 @@
 
     <!-- css -->
 
-    <link rel="stylesheet" href="app/public/css/global.min.css">
+    <link rel="preload" as="style" href="app/public/css/global.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/global.min.css"></noscript>
 
-    <link rel="stylesheet" href="app/public/css/partials/header.min.css">
+    <link rel="preload" as="style" href="app/public/css/partials/header.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/partials/header.min.css"></noscript>
 
     <link rel="stylesheet" href="app/public/css/sobre/sobre.min.css">
 
@@ -38,7 +40,11 @@
 
     <!-- js -->
 
-    <script src="app/public/js/script.min.js" defer></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const menu=document.querySelector("[data-menu]");const menuItems=document.querySelector("[data-menu-items]");const menuSpans=document.querySelectorAll("[data-menu-span]");menu.addEventListener("click", () => {menuItems.classList.toggle("show");menuSpans.forEach(menuSpan => {menuSpan.classList.toggle("close")})})
+        })
+    </script>
 
     <!-- primeira imagem a carregar -->
 
