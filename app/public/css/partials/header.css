@@ -61,7 +61,7 @@
     }
 
     #menu > span:nth-child(2).close {
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 
     #menu > span:last-child.close {

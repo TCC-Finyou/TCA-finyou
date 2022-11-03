@@ -8,7 +8,7 @@
     }
 
     main section:first-child h2 {
-        margin: 0 0 30px 20px;
+        margin-bottom: 30px;
         color: #23818E;
         font-size: 2.1rem;
     }
@@ -44,7 +44,7 @@
     }
 
     main section:nth-child(3) h2 {
-        margin: 0 0 80px 20px;
+        margin-bottom: 80px;
         color: #23818E;
         font-size: 2.1rem;
     }
