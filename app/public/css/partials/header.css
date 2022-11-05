@@ -69,21 +69,24 @@
         transform: translateY(-50%) rotate(-45deg);
     }
 
-    #menu-items {
+    header nav {
         position: absolute;
         top: 0;
         right: 0;
-        padding: 100px 10px 190px 50px;
-        border-bottom-left-radius: 100%;
-        background-color: #05464C;
-        color: white;
         transform: translateX(100%);
         transition: transform 500ms ease;
         z-index: -1;
     }
 
-    #menu-items.show {
+    header nav.show {
         transform: translateX(0);
+    }
+
+    #menu-items {
+        padding: 100px 10px 190px 50px;
+        border-bottom-left-radius: 100%;
+        background-color: #05464C;
+        color: white;
     }
 
     #menu-items li a {
