@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinicius Gonçalves, Michele Sousa, Anna Braga, Lucas Bernardo, Erck Gabriel e Larissa Andrade.">
+    <meta name="description" content="Um site sobre finanças, onde você pode se organizar e administar seu dinheiro.">
+
+    <meta property="og:title" content="Finyou">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viniciusgoncalvesdevlp.on.drv.tw/TCC/app/views/pages/">
+    <meta property="og:image" content="https://viniciusgoncalvesdevlp.on.drv.tw/TCC/app/public/images/header/PNG/logo.png">
+    <meta property="og:site_name" content="Finyou">
+    <meta property="og:description" content="Um site sobre finanças, onde você pode se organizar e administar seu dinheiro.">
+
+    <link rel="icon" type="image/x-icon" href="app/public/images/favicon/favicon.png">
+
+    <!-- links externos -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" >
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap">
+    </noscript>
+
+    <!-- css -->
+
+    <link rel="preload" as="style" href="app/public/css/global.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/global.min.css"></noscript>
+
+    <link rel="preload" as="style" href="app/public/css/partials/header.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/partials/header.min.css"></noscript>
+
+    <link rel="stylesheet" href="app/public/css/planos/planos.min.css">
+
+    <link rel="preload" as="style" href="app/public/css/partials/footer.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/partials/footer.min.css"></noscript>
+
+    <!-- js -->
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const menu=document.querySelector("[data-menu]");const menuItems=document.querySelector("[data-menu-items]");const menuSpans=document.querySelectorAll("[data-menu-span]");menu.addEventListener("click", () => {menuItems.classList.toggle("show");menuSpans.forEach(menuSpan => {menuSpan.classList.toggle("close")})})
+        })
+    </script>
+
+    <!-- primeira imagem a carregar -->
+
+    <title>Finyou - finanças de um jeito simples para você</title>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <picture>
+                <source srcset="app/public/images/header/WEBP/logo.webp">
+                <img id="logo" src="app/public/images/header/PNG/logo.png" width="131" height="36" alt="logo finyou" title="logo">
+            </picture>
+        </a>
+
+        <div id="menu" data-menu>
+            <span data-menu-span></span>
+            <span data-menu-span></span>
+            <span data-menu-span></span>
+        </div>
+
+        <ul id="menu-items" data-menu-items>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Entrar</a></li>
+            <li><a href="/sobre.html">Sobre a Finyou</a></li>
+            <li><a href="/planos.html">Planos</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <h1>Vantagens de assinar o Finyou+</h1>
+
+            <div>
+                <picture>
+                    <source srcset="app/public/images/planos/WEBP/0.webp">
+                    <img src="app/public/images/planos/JPG/0.jpg" alt="Mulher vendendo suco de limão" title="Mulher empreendedora">
+                </picture>
+
+                <p class="light-text">Te dará uma base para você priorizar o seu melhoramento em situações financeiras.</p>
+            </div>
+
+            <div>
+                <picture>
+                    <source srcset="app/public/images/planos/WEBP/1.webp">
+                    <img src="app/public/images/planos/JPG/1.jpg" alt="Mulher em dúvida sobre finanças" title="Dúvidas sobre finanças">
+                </picture>
+
+                <p class="light-text">Permitirá que você tenha uma visualização clara e personalizada da sua vida financeira.</p>
+            </div>
+
+            <div>
+                <picture>
+                    <source srcset="app/public/images/planos/WEBP/2.webp">
+                    <img src="app/public/images/planos/JPG/2.jpg" alt="Criança comprando um ursinho" title="Criança comprando">
+                </picture>
+
+                <p class="light-text">Fornecerá o processo mediante de compreensão em relação aos conceitos e produtos financeiros.</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+
+                <p>Criado para que empresas consiga gerenciar os gastos e economias realizadas em si;</p>
+            </div>
+
+            <div>
+                <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+
+                <p>O Finyou te oferece acesso ao relatório financeiro de suas economias;</p>
+            </div>
+
+            <div>
+                <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+
+                <p>Com a conta conjunta, você e o seu acompanhante consiguirão acessar as suas economias, tendo opção de restringir ou auxiliar o seu dinheiro;</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conheça os pacotes do Finyou+</h2>
+
+            <div>
+                <div>
+                    <span>R$ 00,00</span>
+
+                    <ul>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Gráficos mais moderados;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Limite de 3 pessoas para a conta conjunta;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Recomendações de investimentos personalizados;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Converter real para dólar.
+                        </li>
+                    </ul>
+
+                    <a href="#">Assinar gratuitamente</a>
+                </div>
+
+                <div>
+                    <span>R$ 16,90</span>
+
+                    <ul>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Crie tags personalizadas;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Converter o de real para dólar;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Limite de 4 pessoas para a conta conjunta;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Gráficos mais detalhados.
+                        </li>
+                    </ul>
+
+                    <a href="#">Assinar</a>
+                </div>
+
+                <div>
+                    <span>R$ 39,90</span>
+
+                    <ul>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Crie tags personalizadas;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Gráficos mais detalhados;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Recomendações de investimentos personalizados;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Converter de real para monetário;
+                        </li>
+                        <li>
+                            <img src="app/public/images/icons/check-regular-white.png" alt="Símbolo de checado" title="Checado">
+                            Limite de 8 pessoas para a conta conjunta.
+                        </li>
+                    </ul>
+
+                    <a href="#">Assinar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>
+            <a href="#" aria-label="link para página do instagram">
+                <img src="app/public/images/icons/social-media/instagram-logo.png" alt="Logo do instagram" title="Instagram" width="36" height="36">
+            </a>
+
+            <a href="#" aria-label="link para página do facebook">
+                <img src="app/public/images/icons/social-media/facebook-logo.png" alt="Logo do facebook" title="Facebook" width="36" height="36">
+            </a>
+
+            <a href="#" aria-label="link para página do twitter">
+                <img src="app/public/images/icons/social-media/twitter-logo.png" alt="Logo do twitter" title="Twitter" width="36" height="36">
+            </a>
+
+            <a href="#" aria-label="link para página do youtube">
+                <img src="app/public/images/icons/social-media/youtube-logo.png" alt="Logo do youtube" title="Youtube" width="36" height="36">
+            </a>
+        </span>
+
+        <div>
+            <h3>Sobre a Finyou</h3>
+
+            <a href="/sobre.html">Finanças para você!</a>
+        </div>
+
+        <div>
+            <h3>Políticas</h3>
+
+            <a href="#">Termos e condições</a>
+        </div>
+
+        <div>
+            <h3>Fale conosco</h3>
+
+            <a href="#">Tire as suas dúvidas</a>
+        </div>
+
+        <div>
+            <h3>Trabalhe conosco</h3>
+
+            <a href="#">Conheça o nosso trabalho</a>
+        </div>
+
+        <span>
+            <img src="app/public/images/icons/world-regular.png" alt="Planeta Terra" title="Planeta Terra" width="24" height="24">
+            Português (Brasil)
+        </span>
+    </footer>
+</body>
+</html>
