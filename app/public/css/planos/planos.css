@@ -65,7 +65,7 @@
     }
 
     main section:nth-child(3) > div {
-        padding: 30px 15vw 60px;
+        padding: 30px 10vw 60px;
         background-color: #DEDEDE;
     }
 
@@ -101,7 +101,6 @@
 
     main section:nth-child(3) > div div a {
         display: block;
-        width: 90%;
         margin: 0 auto;
         padding: 10px 0;
         background-color: #2d5889;
