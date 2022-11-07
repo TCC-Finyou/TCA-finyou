@@ -32,10 +32,6 @@
         overflow: hidden;
     }
 
-    #menu:focus-visible {
-        outline: 2px solid white;
-    }
-
     #menu > span {
         position: absolute;
         width: 100%;
