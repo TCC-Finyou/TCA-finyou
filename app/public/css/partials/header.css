@@ -32,6 +32,10 @@
         overflow: hidden;
     }
 
+    #menu:focus-visible {
+        outline: 2px solid white;
+    }
+
     #menu > span {
         position: absolute;
         width: 100%;
@@ -55,16 +59,16 @@
         transform: translateY(-100%);
     }
 
-    #menu > span:first-child.close {
+    #menu > span:first-child.close, #menu:focus-visible > span:first-child, header:has(nav ul li a:focus-visible) #menu > span:first-child {
         top: 50%;
         transform: translateY(-50%) rotate(45deg);
     }
 
-    #menu > span:nth-child(2).close {
-        transform: translateX(-100%);
+    #menu > span:nth-child(2).close, #menu:focus-visible > span:nth-child(2), header:has(nav ul li a:focus-visible) #menu > span:nth-child(2) {
+        transform: translateX(-110%);
     }
 
-    #menu > span:last-child.close {
+    #menu > span:last-child.close, #menu:focus-visible > span:last-child, header:has(nav ul li a:focus-visible) #menu > span:last-child {
         top: 50%;
         transform: translateY(-50%) rotate(-45deg);
     }
@@ -78,7 +82,7 @@
         z-index: -1;
     }
 
-    header nav.show {
+    header nav.show, header:has(#menu:focus-visible) nav, nav:has(ul li a:focus-visible) {
         transform: translateX(0);
     }
 
