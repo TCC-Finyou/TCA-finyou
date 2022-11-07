@@ -1,5 +1,6 @@
 :root {
     --main-gradient: linear-gradient(90deg, #2D5788, #1CA093);
+    --hot-color: #FAC20A;
 }
 
 @media (max-width: 480px) {
@@ -103,8 +104,9 @@
         display: block;
         margin: 0 auto;
         padding: 10px 0;
-        background-color: #2d5889;
-        border-radius: 20px;
+        border-radius: 5px;
+        background-color: var(--hot-color);
+        color: #0D2C4F;
         text-decoration: none;
     }
 }
