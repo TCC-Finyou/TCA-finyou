@@ -96,7 +96,7 @@
         text-decoration: none;
     }
 
-    #menu-items li a:hover {
+    #menu-items li a:active {
         text-shadow: 0 0 5px white;
     }
 }
