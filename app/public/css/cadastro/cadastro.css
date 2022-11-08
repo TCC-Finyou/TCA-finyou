@@ -64,9 +64,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     main a:nth-child(4), main a:nth-child(5) {
         display: flex;
         align-items: center;
+        justify-content: center;
         column-gap: 10px;
         margin-bottom: 15px;
-        padding: 10px calc(1rem + 4vw);
+        padding: 10px 0;
         border: 1px solid #797979;
         border-radius: 5px;
         color: #5191A4;
