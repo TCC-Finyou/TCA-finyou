@@ -1,6 +1,6 @@
 :root {
     --main-gradient: linear-gradient(90deg, #2D5788, #1CA093);
-    --hot-color: #fF8800;
+    --contrast-color: #5b14b8;
 }
 
 @media (max-width: 480px) {
@@ -105,15 +105,15 @@
         margin: 0 auto;
         padding: 10px 0;
         border-radius: 5px;
-        background-color: var(--hot-color);
-        color: #001A36;
+        background-color: var(--contrast-color);
+        color: white;
         font-weight: 700;
         text-decoration: none;
         transition: background-color 100ms ease;
     }
 
     main section:nth-child(3) > div div a:active {
-        background-color: #644D02;
+        background-color: #2e0a5c;
         color: white;
     }
 }

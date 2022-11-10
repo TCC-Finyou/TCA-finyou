@@ -1,6 +1,6 @@
 :root {
     --main-gradient: linear-gradient(90deg, #2D5788, #1CA093);
-    --hot-color: #ff8800;
+    --contrast-color: #5B14B7;
 }
 
 @media (max-width: 480px) {
@@ -43,8 +43,8 @@
     main section:first-child a {
         padding: 10px 70px;
         border-radius: 5px;
-        background-color: var(--hot-color);
-        color: #001A36;
+        background-color: var(--contrast-color);
+        color: white;
         text-decoration: none;
         font-weight: 700;
         transition: background-color 100ms ease;
@@ -107,9 +107,9 @@
         display: inline-block;
         width: 100%;
         padding: 10px 0;
-        border: 1px solid var(--hot-color);
         border-radius: 5px;
-        color: var(--hot-color);
+        background-color: var(--contrast-color);
+        color: white;
         text-align: center;
         text-decoration: none;
         transition: background-color 100ms ease;
