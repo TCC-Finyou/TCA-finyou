@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinicius Gonçalves, Michele Sousa, Anna Braga, Lucas Bernardo, Erck Gabriel e Larissa Andrade.">
+    <meta name="description" content="Um site sobre finanças, onde você pode se organizar e administar seu dinheiro.">
+
+    <meta property="og:title" content="Finyou">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viniciusgoncalvesdevlp.on.drv.tw/TCC/app/views/pages/">
+    <meta property="og:image" content="https://viniciusgoncalvesdevlp.on.drv.tw/TCC/app/public/images/header/PNG/logo.png">
+    <meta property="og:site_name" content="Finyou">
+    <meta property="og:description" content="Um site sobre finanças, onde você pode se organizar e administar seu dinheiro.">
+
+    <link rel="icon" type="image/x-icon" href="app/public/images/favicon/favicon.png">
+
+    <!-- links externos -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" >
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap">
+    </noscript>
+
+    <!-- css -->
+
+    <link rel="preload" as="style" href="app/public/css/global.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/global.min.css"></noscript>
+
+    <link rel="preload" as="style" href="app/public/css/partials/header.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/partials/header.min.css"></noscript>
+
+    <link rel="stylesheet" href="app/public/css/funcionalidades/tags/tags.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/funcionalidades/tags/tags.min.css"></noscript>
+
+    <link rel="preload" as="style" href="app/public/css/partials/footer.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/partials/footer.min.css"></noscript>
+
+    <!-- js -->
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const menu=document.querySelector("[data-menu]");const menuItems=document.querySelector("[data-menu-items]");const menuSpans=document.querySelectorAll("[data-menu-span]");menu.addEventListener("click", () => {menuItems.classList.toggle("show");menuSpans.forEach(menuSpan => {menuSpan.classList.toggle("close")})})
+        })
+    </script>
+
+    <title>Finyou - finanças de um jeito simples para você</title>
+</head>
+<body>
+    <header>
+        <a href="/perfil.html">
+            <picture>
+                <source srcset="app/public/images/header/WEBP/logo.webp">
+                <img id="logo" src="app/public/images/header/PNG/logo.png" width="131" height="36" alt="logo finyou" title="logo">
+            </picture>
+        </a>
+
+        <div id="menu" data-menu>
+            <span data-menu-span></span>
+            <span data-menu-span></span>
+            <span data-menu-span></span>
+        </div>
+
+        <nav data-menu-items>
+            <ul id="menu-items">
+                <li><a href="/investimentos.html">Investimentos</a></li>
+                <li><a href="/metas.html">Metas</a></li>
+                <li><a href="/tags.html">Tags</a></li>
+                <li><a href="/relatórios.html">Relatórios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h1>Gerenciar Tags</h1>
+            </div>
+
+            <button>Criar tag +</button>
+
+            <div>
+                <div style="background-color: #E20D0D;"></div>
+
+                <span>Gastos Fixos</span>
+            </div>
+
+            <div>
+                <div style="background-color: #3FA79F;"></div>
+
+                <span>Alimentação</span>
+            </div>
+
+            <div>
+                <div style="background-color: #6A3FE0;"></div>
+
+                <span>Transporte</span>
+            </div>
+        </section>
+
+        <div></div>
+    </main>
+
+    <footer>
+        <span>
+            <a href="#" aria-label="link para página do instagram">
+                <img src="app/public/images/icons/social-media/instagram-logo.png" alt="Logo do instagram" title="Instagram" width="36" height="36">
+            </a>
+
+            <a href="#" aria-label="link para página do facebook">
+                <img src="app/public/images/icons/social-media/facebook-logo.png" alt="Logo do facebook" title="Facebook" width="36" height="36">
+            </a>
+
+            <a href="#" aria-label="link para página do tik tok">
+                <img src="app/public/images/icons/social-media/tiktok-logo.png" alt="Logo do Tik Tok" title="Tik Tok" width="36" height="36">
+            </a>
+
+            <a href="#" aria-label="link para página do youtube">
+                <img src="app/public/images/icons/social-media/youtube-logo.png" alt="Logo do youtube" title="Youtube" width="36" height="36">
+            </a>
+        </span>
+
+        <div>
+            <h2>Sobre a Finyou</h2>
+
+            <a href="/sobre.html">Finanças para você!</a>
+        </div>
+
+        <div>
+            <h2>Políticas</h2>
+
+            <a href="#">Termos e condições</a>
+        </div>
+
+        <div>
+            <h2>Fale conosco</h2>
+
+            <a href="#">Tire as suas dúvidas</a>
+        </div>
+
+        <div>
+            <h2>Trabalhe conosco</h2>
+
+            <a href="#">Conheça o nosso trabalho</a>
+        </div>
+
+        <span>
+            <img src="app/public/images/icons/world-regular.png" alt="Planeta Terra" title="Planeta Terra" width="24" height="24">
+            Português (Brasil)
+        </span>
+    </footer>
+</body>
+</html>
