@@ -54,7 +54,7 @@
     }
 
     main section:first-child > div > div div {
-        width: 6vw;
+        width: 10vw;
         border-radius: 20px;
         background-color: white;
     }
