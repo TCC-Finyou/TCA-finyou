@@ -20,9 +20,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" >
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap" >
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;800&display=swap">
     </noscript>
 
     <!-- css -->
@@ -33,8 +33,8 @@
     <link rel="preload" as="style" href="app/public/css/partials/header.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="app/public/css/partials/header.min.css"></noscript>
 
-    <link rel="stylesheet" href="app/public/css/perfil/perfil.css" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="app/public/css/perfil/perfil.css"></noscript>
+    <link rel="stylesheet" href="app/public/css/perfil/perfil.min.css" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="app/public/css/perfil/perfil.min.css"></noscript>
 
     <link rel="preload" as="style" href="app/public/css/partials/footer.min.css" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="app/public/css/partials/footer.min.css"></noscript>
@@ -137,12 +137,14 @@
             </div>
 
             <div>
-                <h2>Total de gastos</h2>
-                <span>R$ 324,01</span>
+                <div>
+                    <h2>Total de gastos</h2>
+                    <span>R$ 324,01</span>
+                </div>
 
                 <div>
                     <span>
-                        <div></div>
+                        <div style="background-color: #6CE5E8;"></div>
                         Outros
                     </span>
                     <span>R$ 102,31</span>
@@ -150,7 +152,7 @@
 
                 <div>
                     <span>
-                        <div></div>
+                        <div style="background-color: #2F5F98;"></div>
                         Ecônomias
                     </span>
                     <span>R$ 146,67</span>
@@ -189,39 +191,39 @@
             <h2>Histórico</h2>
 
             <span>
-                <img src="" alt="">
+                <img src="app/public/images/icons/spotify-logo.png" alt="Logo do Spotify" title="Spotify">
 
                 <h3>Spotify Duo</h3>
                 <span>PIX</span>
 
-                <span>-R$ 24,90</span>
+                <span class="negative">-R$ 24,90</span>
             </span>
 
             <span>
-                <img src="" alt="">
+                <img src="app/public/images/icons/tv-solid.png" alt="Televisão" title="Televisão">
 
                 <h3>Disney Plus</h3>
                 <span>PIX</span>
 
-                <span>-R$ 27,90</span>
+                <span class="negative">-R$ 27,90</span>
             </span>
 
             <span>
-                <img src="" alt="">
+                <img src="app/public/images/icons/user-solid.png" alt="Uma pessoa" title="Pessoa">
 
                 <h3>Roberto Nunes</h3>
                 <span>Transferência</span>
 
-                <span>+R$ 200,00</span>
+                <span class="positive">+R$ 200,00</span>
             </span>
 
             <span>
-                <img src="" alt="">
+                <img src="app/public/images/icons/user-solid.png" alt="Uma pessoa" title="Pessoa">
 
                 <h3>Denise Martins</h3>
                 <span>PIX</span>
 
-                <span>+R$ 198,02</span>
+                <span class="positive">+R$ 198,02</span>
             </span>
 
             <a href="#">Ver mais</a>
