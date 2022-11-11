@@ -21,7 +21,7 @@
     main section:first-child div:first-child h1 {
         color: #3F8F96;
         font-size: 1.8rem;
-        font-weight: 700;
+        font-weight: 800;
         text-align: center;
     }
 
@@ -131,7 +131,8 @@
         margin-bottom: 30px;
         padding: 15px 25px;
         border: 1px solid #797979;
-        border-radius: 5px;
+        border-radius: 20px;
+        box-shadow: 0 0 5px #bbb;
         background-color: white;
         color: #3F8F96;
         font-size: 1.2rem;
