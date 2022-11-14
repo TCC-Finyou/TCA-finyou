@@ -51,10 +51,27 @@
         background-color: #ffffff80;
     }
 
-    main section:first-child > div div {
+    main section:first-child > div > div {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        width: 100%;
+        padding: 20px 10px;
+        border: solid white;
+        border-width: 2px 0;
+        border-radius: 10px;
+        overflow: scroll;
+    }
+
+    main section:first-child > div > div::-webkit-scrollbar {
+        display: none;
+    }
+
+    main section:first-child > div div div {
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 35vw;
+        min-width: 140px;
         max-width: 145px;
         min-height: 100%;
         padding: 40px 10px;
@@ -65,18 +82,18 @@
         font-weight: 700;
     }
 
-    main section:first-child > div div h2 {
+    main section:first-child > div div div h2 {
         font-size: .8rem;
         color: #23818E;
     }
 
-    main section:first-child > div div span:nth-child(2) {
+    main section:first-child > div div div span:nth-child(2) {
         margin-bottom: auto;
         color: #333;
         font-size: .7rem;
     }
 
-    main section:first-child > div div span:last-child {
+    main section:first-child > div div div span:last-child {
         margin-top: 20px;
         font-size: 1.2rem;
     }
@@ -97,7 +114,7 @@
         row-gap: 50px;
         width: calc(100% - 20vw);
         margin: 0 10vw;
-        padding-top: 25px;
+        padding: 25px 0 10px;
         border-radius: 30px;
         box-shadow: 0 0 5px #bbb;
         background-color: white;
