@@ -75,12 +75,24 @@
         right: 0;
         transform: translateX(100%);
         -moz-transform: translateX(100%);
-        transition: transform 500ms ease;
+        transition: transform 500ms ease, opacity 500ms ease;
         opacity: 0;
         z-index: -1;
     }
 
-    header nav.show, header:has(#menu:focus-visible) nav, nav:has(ul li a:focus-visible) {
+    header nav.show {
+        transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        opacity: 1;
+    }
+
+    nav:has(ul li a:focus-visible) {
+        transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        opacity: 1;
+    }
+
+    header:has(#menu:focus-visible) nav {
         transform: translateX(0%);
         -moz-transform: translateX(0%);
         opacity: 1;
